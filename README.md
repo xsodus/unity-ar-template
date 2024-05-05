@@ -20,5 +20,7 @@ I've created this project because AR origin was deprecated in `Unity 2022.3.22f1
 ## TODO
 - [x] iOS setup
 - [ ] Android setup
+- [x] Face filter test scene
+- [ ] Platform filter test scene
 
 
