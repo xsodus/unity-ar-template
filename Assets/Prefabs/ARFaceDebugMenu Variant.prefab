@@ -151,6 +151,7 @@ MonoBehaviour:
   - {fileID: 1362246136054271622}
   - {fileID: 1562610205198275768}
   - {fileID: 5698160699852332538}
+  - {fileID: 4457116596735046828}
 --- !u!1 &5129770055889358794
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +507,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3312961387523717103, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312961387523717103, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -513,6 +518,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4231614658213053709, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
+      propertyPath: m_buttonHighlights.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4231614658213053709, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
+      propertyPath: m_buttonHighlights.Array.data[4]
+      value: 
+      objectReference: {fileID: 5698160699852332538}
+    - target: {fileID: 4550434694824363020, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
+      propertyPath: m_buttonHighlights.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550434694824363020, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
+      propertyPath: m_buttonHighlights.Array.data[4]
+      value: 
+      objectReference: {fileID: 5698160699852332538}
     - target: {fileID: 5243706613650555252, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -537,6 +558,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6116638556866371132, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
+      propertyPath: m_buttonHighlights.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116638556866371132, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
+      propertyPath: m_buttonHighlights.Array.data[4]
+      value: 
+      objectReference: {fileID: 5698160699852332538}
     - target: {fileID: 6234637625423282858, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
       propertyPath: m_Name
       value: ARFaceDebugMenu Variant
@@ -625,6 +654,14 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 8506644878863973134, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
+      propertyPath: m_buttonHighlights.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506644878863973134, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
+      propertyPath: m_buttonHighlights.Array.data[4]
+      value: 
+      objectReference: {fileID: 5698160699852332538}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -671,6 +708,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3312961387523717103, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
   m_PrefabInstance: {fileID: 895956801153440968}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4457116596735046828 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3581989087205877860, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}
+  m_PrefabInstance: {fileID: 895956801153440968}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6551314784073768546 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6234637625423282858, guid: ef3886a9667424aedaa5b3b3e1285dbb, type: 3}

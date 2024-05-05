@@ -680,28 +680,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &1370639143 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4457116596735046828, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-  m_PrefabInstance: {fileID: 8712008150112311758}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2053827137 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5698160699852332538, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-  m_PrefabInstance: {fileID: 8712008150112311758}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8712008150112311758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -803,10 +781,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2419861415611804455, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 2419861415611804455, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -814,22 +788,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3695616671525247172, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-      propertyPath: m_buttonHighlights.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3695616671525247172, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-      propertyPath: m_buttonHighlights.Array.data[4]
-      value: 
-      objectReference: {fileID: 2053827137}
-    - target: {fileID: 3951527048596986309, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-      propertyPath: m_buttonHighlights.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3951527048596986309, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-      propertyPath: m_buttonHighlights.Array.data[4]
-      value: 
-      objectReference: {fileID: 2053827137}
     - target: {fileID: 4947890935802011068, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -854,22 +812,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5663448523342769544, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-      propertyPath: m_buttonHighlights.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5663448523342769544, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-      propertyPath: m_buttonHighlights.Array.data[4]
-      value: 
-      objectReference: {fileID: 1370639143}
-    - target: {fileID: 6380960389057921780, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-      propertyPath: m_buttonHighlights.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6380960389057921780, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-      propertyPath: m_buttonHighlights.Array.data[4]
-      value: 
-      objectReference: {fileID: 2053827137}
     - target: {fileID: 6551314784073768546, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
       propertyPath: m_Name
       value: ARFaceDebugMenu
@@ -978,14 +920,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8818821597387139014, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-      propertyPath: m_buttonHighlights.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8818821597387139014, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-      propertyPath: m_buttonHighlights.Array.data[4]
-      value: 
-      objectReference: {fileID: 2053827137}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
