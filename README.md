@@ -20,13 +20,13 @@ This project was created to address the deprecation of the AR Origin component i
 
 8.Xcode Setup (Optional - Physical Device Deployment)
 
-9.Apple Developer Account: Xcode might prompt you to log in with your Apple Developer account for physical device deployment. Follow the guide at https://developer.apple.com/help/account/get-started/sign-in-to-your-developer-account/ to log in and install the necessary certificates.
+9.Xcode might prompt you to log in with your Apple Developer account for physical device deployment. Follow the guide at https://developer.apple.com/help/account/get-started/sign-in-to-your-developer-account/ to log in and install the necessary certificates.
 
-10.Signing Configuration: Enable "Automatically manage signing" and ensure the correct team name is selected for app signing. Refer to https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app/ for more details.
+10.Enable "Automatically manage signing" and ensure the correct team name is selected for app signing. Refer to https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app/ for more details.
 
-11.Device Selection: Choose your target iPhone (physical device) from the available options.
+11.Choose your target iPhone (physical device) from the available options.
 
-12.Run the Application: Initiate the app.
+12.Run the app.
 
 ## Testing
 
