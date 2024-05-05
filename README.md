@@ -16,3 +16,9 @@ I've created this project because AR origin was deprecated in Unity 2022.3.22f1.
 11. Run the app.
 12. When the app is opened. Point your front camera to your face.
 13. You should see the green mask on your face.
+
+## TODO
+- [x] iOS setup
+- [ ] Android setup
+
+
