@@ -87,8 +87,8 @@
     <Compile Include="Library/PackageCache/com.unity.xr.arfoundation@5.1.4/Editor/Simulation/SimulationEnvironmentLayerNameCheck.cs" />
     <Compile Include="Library/PackageCache/com.unity.xr.arfoundation@5.1.4/Editor/Simulation/EditorSimulationSceneManager.cs" />
     <Compile Include="Library/PackageCache/com.unity.xr.arfoundation@5.1.4/Editor/Simulation/SimulationPackageMetadata.cs" />
-    <Compile Include="Library/PackageCache/com.unity.xr.arfoundation@5.1.4/Editor/Simulation/SimulationBuildProcessor.cs" />
     <Compile Include="Library/PackageCache/com.unity.xr.arfoundation@5.1.4/Editor/Simulation/XREnvironmentViewUtilities.cs" />
+    <Compile Include="Library/PackageCache/com.unity.xr.arfoundation@5.1.4/Editor/Simulation/SimulationBuildProcessor.cs" />
     <Compile Include="Library/PackageCache/com.unity.xr.arfoundation@5.1.4/Editor/Simulation/XRSimulationSettings.cs" />
     <Compile Include="Library/PackageCache/com.unity.xr.arfoundation@5.1.4/Editor/Simulation/Analytics/Hooks/EnvironmentChangeHook.cs" />
     <Compile Include="Library/PackageCache/com.unity.xr.arfoundation@5.1.4/Editor/Simulation/SampleEnvironmentsHelper.cs" />

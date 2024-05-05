@@ -9,7 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/ARSampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
-    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: d7b14026ed7bd45a09107d9170b6535d, type: 2}
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c20841a2518e9473bbb4e70e0d4c52c9, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 41c07819ca0a04c2c9d1cbf858e394c7, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 03c077f05f27c497499aac65d15d6d17, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: da20ef07173814545891741fd07811f7, type: 2}
     com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 619d0baf475a24d438002596705926c5, type: 2}
