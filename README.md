@@ -1,26 +1,42 @@
-# The AR template project for Unity 2022.3.22f1.
-I've created this project because AR origin was deprecated in `Unity 2022.3.22f1`. There is no full walkthrough guide line to setup so this project will help you to speed up initial the AR project.
+# AR Template Project for Unity 2022.3.22f1
 
-## How to use
+This project was created to address the deprecation of the AR Origin component in Unity 2022.3.22f1. It aims to streamline the initial setup process for AR projects by providing a pre-configured foundation.
 
-1. Open this project in the Unity 2022.3.22f1.
-2. Go to `File` -> `Build Settings`.
-3. Select `iOS` platform
-4. Click on `Player Settings` buttom
-5. Go to `Other Settings` section then change `Bundle Identifier` to your app name.
-6. Close the `Project Settings` window
-7. Then click `Build And Run` button
-8. The XCODE may request you to login with Apple Developer account for running on the physical device. You need to login and install certificates by this guide: https://developer.apple.com/documentation/xcode/sharing-your-teams-signing-certificates
-9. You need to enable `Automatically manage signing` and put the correct team name for siging the app. You can check more detail here https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app/
-10. Select the device target to your iPhone (physical iphone)
-11. Run the app.
-12. When the app is opened. Point your front camera to your face.
-13. You should see the green mask on your face.
+## Instructions for Use
 
-## TODO
+1.Open the project in Unity version 2022.3.22f1.
+
+2.Navigate to "File" > "Build Settings."
+
+3.Select the "iOS" platform.
+
+4.Click the "Player Settings" button.
+
+5.Under "Other Settings," change the "Bundle Identifier" to your desired app name.
+
+6.Exit the "Project Settings" window.
+
+7.Click the "Build And Run" button.
+
+8.Xcode Setup (Optional - Physical Device Deployment)
+
+9.Apple Developer Account: Xcode might prompt you to log in with your Apple Developer account for physical device deployment. Follow the guide at https://developer.apple.com/help/account/get-started/sign-in-to-your-developer-account/ to log in and install the necessary certificates.
+
+10.Signing Configuration: Enable "Automatically manage signing" and ensure the correct team name is selected for app signing. Refer to https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app/ for more details.
+
+11.Device Selection: Choose your target iPhone (physical device) from the available options.
+
+12.Run the Application: Initiate the app.
+
+## Testing
+
+Camera Focus: Upon app launch, direct the front camera towards your face.
+
+Expected Result: A green mask should appear on your face, signifying successful implementation.
+
+## Development Status
+
 - [x] iOS setup
 - [ ] Android setup
 - [x] Face filter test scene
 - [ ] Platform filter test scene
-
-
