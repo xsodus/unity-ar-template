@@ -1,5 +1,5 @@
-# The AR template project for Unity.
-I've created this project because AR origin was deprecated in Unity 2022.3.22f1. There is no full walkthrough guide line to setup so this project will help you to speed up initial the AR project.
+# The AR template project for Unity 2022.3.22f1.
+I've created this project because AR origin was deprecated in `Unity 2022.3.22f1`. There is no full walkthrough guide line to setup so this project will help you to speed up initial the AR project.
 
 ## How to use
 
