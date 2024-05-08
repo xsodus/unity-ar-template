@@ -13,6 +13,9 @@ public class ARFaceUIManager : MonoBehaviour
 
     [SerializeField]
     ARCameraManager arCameraManager;
+
+    [SerializeField]
+    ARSession arSession;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +23,14 @@ public class ARFaceUIManager : MonoBehaviour
        iconRotation.z -= iconRotation.z;
        rotateButton.GetComponent<RectTransform>().rotation = Quaternion.Euler(iconRotation);
        rotateButton.onClick.AddListener(() => {
-          switch (arCameraManager.currentFacingDirection){
+          StartCoroutine(switchCamera());
+       });
+    }
+
+    IEnumerator switchCamera ()
+    {
+    
+        switch (arCameraManager.currentFacingDirection){
                case CameraFacingDirection.User:
                     arCameraManager.requestedFacingDirection = CameraFacingDirection.World;
                     break;
@@ -28,6 +38,8 @@ public class ARFaceUIManager : MonoBehaviour
                     arCameraManager.requestedFacingDirection = CameraFacingDirection.User;
                     break;
           }
-       });
+           arSession.enabled = false;
+          yield return null;
+           arSession.enabled = true;
     }
 }
