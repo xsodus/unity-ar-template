@@ -22,12 +22,10 @@ public class ARFaceUIManager : MonoBehaviour
        Vector3 iconRotation = new Vector3(0,0,leftSidebar.rotation.eulerAngles.z);
        iconRotation.z -= iconRotation.z;
        rotateButton.GetComponent<RectTransform>().rotation = Quaternion.Euler(iconRotation);
-       rotateButton.onClick.AddListener(() => {
-          StartCoroutine(switchCamera());
-       });
+       rotateButton.onClick.AddListener(switchCamera);
     }
 
-    IEnumerator switchCamera ()
+   void switchCamera ()
     {
     
         switch (arCameraManager.currentFacingDirection){
@@ -38,8 +36,9 @@ public class ARFaceUIManager : MonoBehaviour
                     arCameraManager.requestedFacingDirection = CameraFacingDirection.User;
                     break;
           }
-           arSession.enabled = false;
-          yield return null;
-           arSession.enabled = true;
+    }
+
+    void onDestroy() {
+      rotateButton.onClick.RemoveListener(switchCamera);
     }
 }

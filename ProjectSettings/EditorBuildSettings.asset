@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/ARSampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/ARFaceTurtorial2.unity
+    path: Assets/Scenes/MainMenu.unity
+    guid: cebd19042c20d4b03827289bef7aa528
+  - enabled: 1
+    path: Assets/Scenes/ARFaceAssignment1.unity
     guid: e9a56ae383a874df8b63b5c2ac1908ce
+  - enabled: 1
+    path: Assets/Scenes/ARGlasses.unity
+    guid: b1d2be3205d1d47018481fd735562ae9
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c20841a2518e9473bbb4e70e0d4c52c9, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 41c07819ca0a04c2c9d1cbf858e394c7, type: 2}
