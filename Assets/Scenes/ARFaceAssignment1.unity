@@ -746,10 +746,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ARFaceDebugMenu
       objectReference: {fileID: 0}
-    - target: {fileID: 6551314784073768546, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6551314784073768550, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
       propertyPath: m_Pivot.x
       value: 0

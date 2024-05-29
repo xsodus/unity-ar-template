@@ -67,6 +67,7 @@
     <Compile Include="Assets/Scripts/ARFaceUIManager.cs" />
     <Compile Include="Assets/FastScriptReload/Examples/Scripts/FunctionLibrary.cs" />
     <Compile Include="Assets/Scripts/MainMenuManager.cs" />
+    <Compile Include="Assets/Scripts/BackToMainMenu.cs" />
     <Compile Include="Assets/FastScriptReload/Examples/Scripts/Graph.cs" />
   </ItemGroup>
   <ItemGroup>

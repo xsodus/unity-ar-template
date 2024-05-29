@@ -36,9 +36,10 @@ public class ARFaceUIManager : MonoBehaviour
                     arCameraManager.requestedFacingDirection = CameraFacingDirection.User;
                     break;
           }
+          arSession.Reset();
     }
 
-    void onDestroy() {
+    void OnDestroy() {
       rotateButton.onClick.RemoveListener(switchCamera);
     }
 }
