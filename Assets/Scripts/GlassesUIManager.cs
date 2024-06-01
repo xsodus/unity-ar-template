@@ -49,6 +49,7 @@ public class GlassesUIManager : MonoBehaviour
             }
         } else if(args.removed.Count > 0)
         {
+            glasses.ForEach((MeshRenderer glasses) => { GameObject.Destroy(glasses.gameObject); });
             glasses.Clear();
         }
         
