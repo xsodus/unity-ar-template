@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ARGlasses.unity
     guid: b1d2be3205d1d47018481fd735562ae9
+  - enabled: 0
+    path: Assets/Scenes/QuestARTest.unity
+    guid: fddb15f308cbe4cdb987953db9ff1e20
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c20841a2518e9473bbb4e70e0d4c52c9, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 41c07819ca0a04c2c9d1cbf858e394c7, type: 2}
@@ -24,4 +27,4 @@ EditorBuildSettings:
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: da20ef07173814545891741fd07811f7, type: 2}
     com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 619d0baf475a24d438002596705926c5, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7be608c8596284332bb60aaec66d53f9, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: c52c8d8a70bf54dddb859f8da5b5b0bf, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a17a7f63b1fd9449cbb48392e1b19795, type: 2}

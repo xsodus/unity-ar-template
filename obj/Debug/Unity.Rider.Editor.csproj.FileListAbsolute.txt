@@ -1,0 +1,11 @@
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.Rider.Editor.dll
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.Rider.Editor.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEditor.TestRunner.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEngine.TestRunner.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEditor.UI.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEngine.UI.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.Rider.Editor.csproj.AssemblyReference.cache
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.Rider.Editor.csproj.CoreCompileInputs.cache
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.Rider.Editor.csproj.CopyComplete
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.Rider.Editor.dll
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.Rider.Editor.pdb

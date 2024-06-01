@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{29EF24F2-F699-E488-7BCF-1E05BB8DAF01}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GlassesUIManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ARFaceUIManager.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/GlassesUIManager.cs" Line="10" Column="11" />
+      <File FileName="Assets/Scripts/BackToMainMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MainMenuManager.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="unity-ar-template" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="GlassesUIManager.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ae4d49d2-73b3-4076-afab-c93e76757b66" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
