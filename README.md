@@ -50,6 +50,6 @@ Expected Result: A green mask should appear on your face, signifying successful 
 
 - [x] iOS setup
 - [x] Android setup
-- [ ] Occulus Quest
-- [x] Face filter test scene
-- [ ] Platform filter test scene
+- [x] Occulus Quest
+- [x] AR face filter test scene
+- [x] AR tracked image test scene

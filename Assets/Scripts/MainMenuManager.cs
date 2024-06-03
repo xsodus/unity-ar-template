@@ -8,6 +8,7 @@ public class MainMenuManager : MonoBehaviour
 {
     public Button assignment1SceneButton;
     public Button glassesSceneButton;
+    public Button arTrackedImage;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,9 @@ public class MainMenuManager : MonoBehaviour
         });
         glassesSceneButton.onClick.AddListener(() => {
             SceneManager.LoadScene("ARGlasses");
+        });
+        arTrackedImage.onClick.AddListener(() => {
+            SceneManager.LoadScene("ARMarkerScene");
         });
     }
 

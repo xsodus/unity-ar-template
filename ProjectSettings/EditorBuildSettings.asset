@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/QuestARTest.unity
     guid: fddb15f308cbe4cdb987953db9ff1e20
+  - enabled: 1
+    path: Assets/Scenes/ARMarkerScene.unity
+    guid: 5306549aa61634723993be7089596242
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c20841a2518e9473bbb4e70e0d4c52c9, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 41c07819ca0a04c2c9d1cbf858e394c7, type: 2}
