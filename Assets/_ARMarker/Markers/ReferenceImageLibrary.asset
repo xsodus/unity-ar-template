@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
   m_Name: ReferenceImageLibrary
   m_EditorClassIdentifier: 
-  m_GuidLow: 0
-  m_GuidHigh: 0
+  m_GuidLow: 5106310219393027688
+  m_GuidHigh: 12382351536186530990
   m_DataStore:
     m_Storage: []
   m_Images:
@@ -26,17 +26,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
     m_Name: BeachsideTown
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 4927453984479632623
-      m_GuidHigh: 12991748737933470627
-    m_SerializedTextureGuid:
-      m_GuidLow: 14184301726486491900
-      m_GuidHigh: 16394836934339281514
-    m_Size: {x: 0.1, y: 0.08387097}
-    m_SpecifySize: 1
-    m_Name: BeachsideTown2
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: f5d724525c398de4e98f10c555a6b878, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5317614583997856907
       m_GuidHigh: 17613465111076415647
@@ -46,4 +36,4 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
     m_Name: Fusebox
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: 483682ee5d83f9b4f900d64387d5714f, type: 3}

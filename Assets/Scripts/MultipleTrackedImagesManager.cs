@@ -1,17 +1,22 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils.Collections;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+
+[Serializable]
+public class ReferredImage {
+    public string imageName;
+    public GameObject mappedObject;
+}
 
 public class MultipleTrackedImagesManager : MonoBehaviour
 {
     private ARTrackedImageManager trackedImageManager;
 
-    public string[] imageNames;
-
-    public GameObject[] modelPrefabs;
+    public ReferredImage[] referredImages;
 
     // Start is called before the first frame update
     void Awake()
@@ -28,12 +33,14 @@ public class MultipleTrackedImagesManager : MonoBehaviour
             args.added.ForEach((ARTrackedImage addedImage) => {
                 Debug.Log($"Detected! {addedImage.name}");
                 Debug.Log($"Detected! {addedImage.gameObject.name}");
-                int index = Array.FindIndex(imageNames, element => addedImage.gameObject.name.Contains(element));
-                Debug.Log($"Prefab index! {index}");
-                if (index > -1)
+                Debug.Log($"ImageName {addedImage.referenceImage.name}");
+                ReferredImage targetObject = Array.Find<ReferredImage>(referredImages,
+                    element => addedImage.referenceImage.name.Equals(element.imageName));
+                if (targetObject != null)
                 {
-                    Debug.Log($"Create object! {modelPrefabs[index].name}");
-                    Instantiate(modelPrefabs[index], addedImage.transform);
+                    // TODO : This should replace with object pooling machanism.
+                    Debug.Log($"Create object! {targetObject.mappedObject.name}");
+                    Instantiate(targetObject.mappedObject, addedImage.transform);
                 }
             });
 

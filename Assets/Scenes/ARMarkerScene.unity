@@ -2723,12 +2723,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74aa0283cd3f48b0b15a0765a13cd38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageNames:
-  - 354C7E02B486F7D7-AFC99E8376A0FE63
-  - 38F52ECAC8BBE6FA-A8BD55EE90E64F7F
-  modelPrefabs:
-  - {fileID: 5262358242281827243, guid: 44af740032094bf48bddbf3f4644216f, type: 3}
-  - {fileID: 366428452883267241, guid: 1a07e1c59d1ee714a96f2b1c8f3e17a2, type: 3}
+  referredImages:
+  - imageName: BeachsideTown
+    mappedObject: {fileID: 5262358242281827243, guid: 44af740032094bf48bddbf3f4644216f, type: 3}
+  - imageName: Fusebox
+    mappedObject: {fileID: 366428452883267241, guid: 1a07e1c59d1ee714a96f2b1c8f3e17a2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
