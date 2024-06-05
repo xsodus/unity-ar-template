@@ -60,12 +60,15 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/_ARPortal/Source Files/Scripts/LightFlicker.cs" />
     <Compile Include="Assets/Scripts/ARFaceUIManager.cs" />
     <Compile Include="Assets/Scripts/MultipleTrackedImagesManager.cs" />
+    <Compile Include="Assets/_ARPortal/Source Files/Scripts/DisplayFPS.cs" />
     <Compile Include="Assets/FastScriptReload/Examples/Scripts/FunctionLibrary.cs" />
     <Compile Include="Assets/Scripts/MainMenuManager.cs" />
     <Compile Include="Assets/Scripts/BackToMainMenu.cs" />
     <Compile Include="Assets/FastScriptReload/Examples/Scripts/Graph.cs" />
+    <Compile Include="Assets/Settings/Project Configuration/SceneTemplate_RotateCube.cs" />
     <Compile Include="Assets/Scripts/GlassesUIManager.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -74,8 +77,10 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
     <None Include="Assets/FastScriptReload/Plugins/Harmony/HarmonyLicense.txt" />
     <None Include="Assets/FastScriptReload/Plugins/ImmersiveVrToolsCommon/ImmersiveVRTools.Common.Runtime.dll" />
+    <None Include="Assets/_ARPortal/Source Files/Shaders/Toon/CustomLighting.hlsl" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
+    <None Include="Assets/_ARPortal/Source Files/Shaders/PortalWindowShader.shader" />
     <None Include="Assets/FastScriptReload/Plugins/Roslyn/System.Collections.Immutable.dll" />
     <None Include="Assets/FastScriptReload/Plugins/ImmersiveVrToolsCommon/ImmersiveVRToolsCommonLicense.txt" />
     <None Include="Assets/FastScriptReload/Third-Party Notices.txt" />

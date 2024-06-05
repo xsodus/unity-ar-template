@@ -2,14 +2,16 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MultipleTrackedImagesManager.cs">
     <Files>
       <File FileName="Assets/Scripts/MainMenuManager.cs" Line="27" Column="1" />
-      <File FileName="Assets/Scripts/MultipleTrackedImagesManager.cs" Line="33" Column="32" />
+      <File FileName="Assets/Scripts/MultipleTrackedImagesManager.cs" Line="31" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="unity-ar-template" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
-              <Node name="Scripts" expanded="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="MultipleTrackedImagesManager.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
