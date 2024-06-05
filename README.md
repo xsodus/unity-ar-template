@@ -53,3 +53,4 @@ Expected Result: A green mask should appear on your face, signifying successful 
 - [x] Occulus Quest
 - [x] AR face filter test scene
 - [x] AR tracked image test scene
+- [ ] AR plan marker test scene
