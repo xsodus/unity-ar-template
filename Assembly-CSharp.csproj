@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/_ARPortal/Source Files/Scripts/LightFlicker.cs" />
+    <Compile Include="Assets/ARPlaneInputManager.cs" />
     <Compile Include="Assets/Scripts/ARFaceUIManager.cs" />
     <Compile Include="Assets/Scripts/MultipleTrackedImagesManager.cs" />
     <Compile Include="Assets/_ARPortal/Source Files/Scripts/DisplayFPS.cs" />

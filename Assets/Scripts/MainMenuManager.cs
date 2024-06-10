@@ -6,20 +6,25 @@ using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {
-    public Button assignment1SceneButton;
-    public Button glassesSceneButton;
-    public Button arTrackedImage;
+    public Button arFaceExample1;
+    public Button arFaceExample2;
+    public Button arImageMarker;
+    public Button arPlaneMarker;
     // Start is called before the first frame update
     void Start()
     {
-        assignment1SceneButton.onClick.AddListener(() => {
-            SceneManager.LoadScene("ARFaceAssignment1");
+        arFaceExample1.onClick.AddListener(() => {
+            SceneManager.LoadScene("ARFaceFilter1");
         });
-        glassesSceneButton.onClick.AddListener(() => {
-            SceneManager.LoadScene("ARGlasses");
+        arFaceExample2.onClick.AddListener(() => {
+            SceneManager.LoadScene("ARFaceFilter2");
         });
-        arTrackedImage.onClick.AddListener(() => {
-            SceneManager.LoadScene("ARMarkerScene");
+        arImageMarker.onClick.AddListener(() => {
+            SceneManager.LoadScene("ARImageMarker");
+        });
+        arPlaneMarker.onClick.AddListener(() =>
+        {
+            SceneManager.LoadScene("ARPlaneMarker");
         });
     }
 

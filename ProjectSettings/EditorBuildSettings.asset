@@ -9,14 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: cebd19042c20d4b03827289bef7aa528
   - enabled: 1
-    path: Assets/Scenes/ARFaceAssignment1.unity
+    path: Assets/Scenes/ARFaceFilter1.unity
     guid: e9a56ae383a874df8b63b5c2ac1908ce
   - enabled: 1
-    path: Assets/Scenes/ARGlasses.unity
+    path: Assets/Scenes/ARFaceFilter2.unity
     guid: b1d2be3205d1d47018481fd735562ae9
   - enabled: 1
-    path: Assets/Scenes/ARMarkerScene.unity
+    path: Assets/Scenes/ARImageMarker.unity
     guid: 5306549aa61634723993be7089596242
+  - enabled: 1
+    path: Assets/Scenes/ARPlaneMarker.unity
+    guid: 77b943a05850b4cbfa1bae3fc621b768
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c20841a2518e9473bbb4e70e0d4c52c9, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 41c07819ca0a04c2c9d1cbf858e394c7, type: 2}
