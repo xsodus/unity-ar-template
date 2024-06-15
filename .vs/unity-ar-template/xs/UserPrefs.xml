@@ -1,16 +1,18 @@
 ﻿<Properties StartupConfiguration="{29EF24F2-F699-E488-7BCF-1E05BB8DAF01}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ARPlaneInputManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenuManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/MainMenuManager.cs" Line="27" Column="1" />
+      <File FileName="Assets/Scripts/MainMenuManager.cs" Line="32" Column="1" />
       <File FileName="Assets/Scripts/MultipleTrackedImagesManager.cs" Line="31" Column="14" />
-      <File FileName="Assets/ARPlaneInputManager.cs" Line="16" Column="9" />
+      <File FileName="Assets/ARPlaneInputManager.cs" Line="56" Column="70" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="unity-ar-template" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
-              <Node name="Scripts" expanded="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="MainMenuManager.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

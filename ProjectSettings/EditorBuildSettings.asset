@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ARPlaneMarker.unity
     guid: 77b943a05850b4cbfa1bae3fc621b768
+  - enabled: 1
+    path: Assets/Scenes/ARCreativeWork.unity
+    guid: 673ba66b5bbc0473ea84195d9de34896
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c20841a2518e9473bbb4e70e0d4c52c9, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 41c07819ca0a04c2c9d1cbf858e394c7, type: 2}

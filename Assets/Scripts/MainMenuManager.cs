@@ -10,6 +10,7 @@ public class MainMenuManager : MonoBehaviour
     public Button arFaceExample2;
     public Button arImageMarker;
     public Button arPlaneMarker;
+    public Button arPlaneMarker2;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,10 @@ public class MainMenuManager : MonoBehaviour
         arPlaneMarker.onClick.AddListener(() =>
         {
             SceneManager.LoadScene("ARPlaneMarker");
+        });
+        arPlaneMarker2.onClick.AddListener(() =>
+        {
+            SceneManager.LoadScene("ARCreativeWork");
         });
     }
 
