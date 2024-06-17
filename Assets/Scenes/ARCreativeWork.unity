@@ -355,10 +355,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Home Decoration App.
 
-    1. Scan the area then tap on the blue area to
-    stop scanning
+    1. Scan the area that you would like to put
+    the decoration.
 
-    2. Touch on desired decoration then tap on the floor to put'
+    2. Touch on desired decoration then tap on the floor to
+    put.
+
+    3. You can drag the object as well,'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

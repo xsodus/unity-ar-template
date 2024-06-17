@@ -1,9 +1,7 @@
 ﻿<Properties StartupConfiguration="{29EF24F2-F699-E488-7BCF-1E05BB8DAF01}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenuManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ARCreativeInputManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/MainMenuManager.cs" Line="32" Column="1" />
-      <File FileName="Assets/Scripts/MultipleTrackedImagesManager.cs" Line="31" Column="14" />
-      <File FileName="Assets/ARPlaneInputManager.cs" Line="56" Column="70" />
+      <File FileName="Assets/Scripts/ARCreativeInputManager.cs" Line="68" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +9,7 @@
           <Node name="unity-ar-template" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="MainMenuManager.cs" selected="True" />
+                <Node name="ARCreativeInputManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -21,7 +19,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e6f43259-196d-41df-adc6-97d5afae29ff" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="38fc9c13-3d95-4dba-bef5-08b676220583" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

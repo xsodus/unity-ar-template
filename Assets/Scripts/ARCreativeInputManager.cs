@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.UI;
-using System.Collections;
 using UnityEngine.EventSystems;
 
 enum GameState
@@ -39,7 +38,7 @@ public class ARCreativeInputManager : MonoBehaviour
 
     Vector2? touchPosition = null;
 
-    bool isSelected = false;
+    Vector3 decoratorOffset = new Vector3(0, 0.05f, 0);
 
     // Start is called before the first frame update
     void Start()
@@ -63,9 +62,18 @@ public class ARCreativeInputManager : MonoBehaviour
                 }
             });
         });
+
+        aRPlaneManager.planesChanged += (planes) => {
+            if (currentState == GameState.SelectField)
+            {
+                if (planes.added.Count > 0)
+                {
+                    HandleSelectField();
+                }
+            }
+        };
     }
 
-   
     private void OnUnselect() {
         selectedMarkerIndex = -1;
         currentState = GameState.SelectMarker;
@@ -109,9 +117,6 @@ public class ARCreativeInputManager : MonoBehaviour
 
         switch (currentState)
         {
-            case GameState.SelectField:
-                HandleSelectField();
-                break;
             case GameState.DragMarker:
                 DragSelectedObject();
                 
@@ -130,11 +135,10 @@ public class ARCreativeInputManager : MonoBehaviour
 
     private void HandleSelectField()
     {
-        aRPlaneManager.enabled = false;
         currentState = GameState.SelectMarker;
     }
 
-    Vector3 Offset = new Vector3(0, 0.05f, 0);
+  
 
     // Generate a function to drag the selected object  
     public void DragSelectedObject()
@@ -144,7 +148,7 @@ public class ARCreativeInputManager : MonoBehaviour
         });
         if (currentActiveMarker != null && floorObj != null)
         {
-            currentActiveMarker.transform.position = floorObj.pose.position + Offset;
+            currentActiveMarker.transform.position = floorObj.pose.position + decoratorOffset;
             currentActiveMarker.transform.rotation = floorObj.pose.rotation;
         }
     }

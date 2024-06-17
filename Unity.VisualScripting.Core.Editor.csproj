@@ -406,8 +406,8 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/Product/LudiqProduct.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/Description/GraphDescriptor.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/Inspection/Unity/ColorInspector.cs" />
-    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/Windows/BackupWindow/BackupPage.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/Reflection/EnumOptionTree.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/Windows/BackupWindow/BackupPage.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/Platforms/MethodBaseStubWriter.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/ResourceProviders/CreateTextureOptions.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/Decorators/MultiDecoratorProvider.cs" />
