@@ -1,10 +1,10 @@
-# AR Template Project for Unity 2022.3.22f1
+# AR Template Project for Unity 6.0
 
-This project was created to address the deprecation of the AR Origin component in Unity 2022.3.22f1. It aims to streamline the initial setup process for AR projects by providing a pre-configured foundation.
+This project was created to address the deprecation of the AR Origin component in Unity 6.0. It aims to streamline the initial setup process for AR projects by providing a pre-configured foundation.
 
 ## Instructions for iOS Platform
 
-1.Open the project in Unity version 2022.3.22f1.
+1.Open the project in Unity version 6.0.
 
 2.Navigate to "File" > "Build Settings."
 
@@ -50,7 +50,7 @@ Expected Result: A green mask should appear on your face, signifying successful 
 
 - [x] iOS setup
 - [x] Android setup
-- [x] Occulus Quest
+- [] Occulus Quest (WIP)
 - [x] AR face filter test scene
 - [x] AR tracked image test scene
 - [x] AR plan marker test scene
