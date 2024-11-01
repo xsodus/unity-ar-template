@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System.Linq;
 
 enum GameState
 {
@@ -11,24 +12,23 @@ enum GameState
     SelectMarker,
     DragMarker,
 }
+
 public class ARCreativeInputManager : MonoBehaviour
 {
     public ARPlaneManager aRPlaneManager;
     public ARRaycastManager aRRayCastManager;
-    List<ARRaycastHit> result = new List<ARRaycastHit>();
+
+    [SerializeField]
+    private List<ARRaycastHit> result = new List<ARRaycastHit>();
 
     public GameObject[] markerPrefab;
 
     public Toggle[] decorateButtons;
 
-    [SerializeField]
     public int selectedMarkerIndex = -1;
 
     [SerializeField]
     private GameState currentState = GameState.SelectField;
-
-    [SerializeField]
-    private GameObject selectedMarker;
 
     [SerializeField]
     private List<GameObject> markerPool = new List<GameObject>();
@@ -36,120 +36,113 @@ public class ARCreativeInputManager : MonoBehaviour
     [SerializeField]
     private GameObject currentActiveMarker;
 
-    Vector2? touchPosition = null;
-
-    Vector3 decoratorOffset = new Vector3(0, 0.05f, 0);
+    public Vector3 decoratorOffset = new Vector3(0, 0.05f, 0);
 
     // Start is called before the first frame update
     void Start()
     {
-        Array.ForEach(markerPrefab, item => {
-            markerPool.Add(Instantiate(item, new Vector3(1000f, 1000f, 0f), Quaternion.Euler(Vector3.zero)));
-        });
+        // Instantiate all the marker prefabs and set them to a far away position
+        foreach (var item in markerPrefab)
+        {
+            var markerInstance = Instantiate(item, new Vector3(1000f, 1000f, 0f), Quaternion.identity);
+            markerPool.Add(markerInstance);
+        }
 
-        Array.ForEach(decorateButtons, button => {
-            button.onValueChanged.AddListener((value) => {
-                var index = Array.IndexOf(decorateButtons, button);
+        // Add event listeners to the toggle buttons
+        for (int i = 0; i < decorateButtons.Length; i++)
+        {
+            int index = i; // Capture the current index to avoid closure issues
+            decorateButtons[i].onValueChanged.AddListener((value) => {
                 if (value)
                 {
                     selectedMarkerIndex = index;
-                    HandleSelectMarker();
-                } else {
-                    if(selectedMarkerIndex == index)
-                    {
-                        OnUnselect();
-                    }
+                    currentActiveMarker = markerPool[selectedMarkerIndex];
+                    currentState = GameState.DragMarker;
                 }
             });
-        });
+        }
 
-        aRPlaneManager.planesChanged += (planes) => {
-            if (currentState == GameState.SelectField)
-            {
-                if (planes.added.Count > 0)
-                {
-                    HandleSelectField();
-                }
-            }
-        };
+        decorateButtons[0].transform.parent.gameObject.SetActive(false);
+
+        // Add event listener to the ARPlaneManager
+        // [NEW!] ARPlaneManager.planesChanged was deprecated in ARFoundation 6.0 and Unity version 6
+        // This function is easier to manage all tracked object types with a single callback
+        aRPlaneManager.trackablesChanged.AddListener(OnTrackableStateChangedEvent);
     }
 
-    private void OnUnselect() {
-        selectedMarkerIndex = -1;
-        currentState = GameState.SelectMarker;
+    private void OnTrackableStateChangedEvent(ARTrackablesChangedEventArgs<ARPlane> arg)
+    {
+        // Allow the user to select a marker only when a new plane is starting to create
+        if(arg.added.Count > 0){
+            currentState = GameState.SelectMarker;
+            decorateButtons[0].transform.parent.gameObject.SetActive(true);
+        }
     }
+
 
     Vector2? GetTouchPosition()
     {
+        // Get the touch position from the input
         if (Application.platform == RuntimePlatform.OSXEditor)
         {
+            // Get touch input from the editor
             return Input.GetMouseButtonDown(0) || Input.GetMouseButton(0) ? Input.mousePosition : null;
         }
         else
         {
+            // Get touch input from the physical device
             return Input.touchCount > 0 ? Input.GetTouch(0).position : null;
         }
     }
 
     void Update()
     {
-        touchPosition = GetTouchPosition();
-    }
-
-    void FixedUpdate() {
-        if(touchPosition == null)
+        // Read input from the user
+        var touchPosition = GetTouchPosition();
+        if (touchPosition == null || EventSystem.current.IsPointerOverGameObject())
         {
-            return;
-        }
-        if (EventSystem.current.IsPointerOverGameObject())
-        {
-            // If the user is touching a UI element (like your toggle button), return immediately
-            return;
-        }
-        if (!aRRayCastManager.Raycast(touchPosition ?? Vector2.zero, result, UnityEngine.XR.ARSubsystems.TrackableType.PlaneWithinBounds))
-        {
-            return;
-        }
-        if (result.Count == 0)
-        {
+            // If no touch position or the user is touching a UI element, return immediately
             return;
         }
 
-        switch (currentState)
+        // Perform a raycast from the touch position to detect if it intersects with any AR planes within their bounds.
+        if (!aRRayCastManager.Raycast(touchPosition.Value, result, UnityEngine.XR.ARSubsystems.TrackableType.PlaneWithinBounds) || result.Count == 0)
         {
-            case GameState.DragMarker:
-                DragSelectedObject();
-                
-                break;
+            // If no intersection is found or the result is empty, return immediately
+            return;
         }
 
+        // Switch the current state to the appropriate state
+        if (currentState == GameState.DragMarker)
+        {
+            DragSelectedObject();
+        }
+
+        // Clear the result list
         result.Clear();
     }
 
-
-    private void HandleSelectMarker()
-    {
-        currentActiveMarker = markerPool[selectedMarkerIndex];
-        currentState = GameState.DragMarker;
-    }
-
-    private void HandleSelectField()
-    {
-        currentState = GameState.SelectMarker;
-    }
-
-  
-
-    // Generate a function to drag the selected object  
     public void DragSelectedObject()
     {
-        var floorObj = Array.Find(result.ToArray(), item => {
-            return item.trackable is ARPlane;
-        });
-        if (currentActiveMarker != null && floorObj != null)
+        // Find the plane object (blue grid)
+        var floorObj = result.FirstOrDefault(item => item.trackable is ARPlane);
+
+        // If the touched plane object is not found, return immediately
+        if (currentActiveMarker == null || floorObj == null)
         {
-            currentActiveMarker.transform.position = floorObj.pose.position + decoratorOffset;
-            currentActiveMarker.transform.rotation = floorObj.pose.rotation;
+            return;
         }
+
+        // Set the position and rotation of the marker to the position and rotation of the touch point on the plane
+        currentActiveMarker.transform.SetPositionAndRotation(
+            floorObj.pose.position + decoratorOffset, 
+            floorObj.pose.rotation
+        );
+    }
+
+    void OnDestroy()
+    {
+        // Remove the event listener to prevent memory leaks
+        aRPlaneManager.trackablesChanged.RemoveListener(OnTrackableStateChangedEvent);
     }
 }
