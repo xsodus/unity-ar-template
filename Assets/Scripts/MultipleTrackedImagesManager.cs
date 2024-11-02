@@ -1,10 +1,7 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using Unity.XR.CoreUtils.Collections;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
-using UnityEngine.XR.ARSubsystems;
 
 [Serializable]
 public class ReferredImage {
@@ -16,15 +13,23 @@ public class MultipleTrackedImagesManager : MonoBehaviour
 {
     private ARTrackedImageManager trackedImageManager;
 
-    public ReferredImage[] referredImages;
+    [SerializeField]
+    private ReferredImage[] referredImages;
+
+    private Dictionary<string, GameObject> referredImagesDict = new Dictionary<string, GameObject>();
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         trackedImageManager = GetComponent<ARTrackedImageManager>();
         // trackedImageManager.trackedImagesChanged was deprecated in AR Foundation 6 in Unity 6
         // [NEW!] trackedImageManager.trackablesChanged is introduced to receive the tracked image changes.
         trackedImageManager.trackablesChanged.AddListener(OnTrackedImagesChanged);
+        // Create a dictionary for faster lookup
+        foreach (var referredImage in referredImages)
+        {
+            referredImagesDict[referredImage.imageName] = referredImage.mappedObject;
+        }
     }
 
     private void OnTrackedImagesChanged(ARTrackablesChangedEventArgs<ARTrackedImage> args)
@@ -36,13 +41,11 @@ public class MultipleTrackedImagesManager : MonoBehaviour
                 Debug.Log($"Detected! {addedImage.name}");
                 Debug.Log($"Detected! {addedImage.gameObject.name}");
                 Debug.Log($"ImageName {addedImage.referenceImage.name}");
-                ReferredImage targetObject = Array.Find(referredImages, element => 
-                    addedImage.referenceImage.name.Equals(element.imageName));
-                if (targetObject != null)
+
+                if (addedImage.referenceImage != null && referredImagesDict.TryGetValue(addedImage.referenceImage.name, out GameObject targetObject))
                 {
-                    // TODO : This should replace with object pooling machanism.
-                    Debug.Log($"Create object! {targetObject.mappedObject.name}");
-                    Instantiate(targetObject.mappedObject, addedImage.transform);
+                    Debug.Log($"Create object! {targetObject.name}");
+                    Instantiate(targetObject, addedImage.transform);
                 }
             }
 
@@ -53,5 +56,10 @@ public class MultipleTrackedImagesManager : MonoBehaviour
                 Destroy(removedObject.Value.gameObject);
             }
         }
+    }
+
+    void OnDestroy()
+    {
+        trackedImageManager.trackablesChanged.RemoveListener(OnTrackedImagesChanged);
     }
 }
