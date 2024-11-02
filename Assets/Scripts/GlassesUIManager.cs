@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Data;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
@@ -8,13 +9,13 @@ public class GlassesUIManager : MonoBehaviour
     public ARFaceManager arFaceManager;
     public Button[] glassesButtons;
     public Button[] buttonColors;
-    private List<MeshRenderer> glasses = new List<MeshRenderer>();
+    private Dictionary<string,List<MeshRenderer>> activeGlassesDict = new Dictionary<string,List<MeshRenderer>>();
     private int activeGlassesIndex;
 
     // Start is called before the first frame update
     void Start()
     {
-        arFaceManager.facesChanged += OnARFacesChanged;
+        arFaceManager.trackablesChanged.AddListener(OnTrackablesChanged);
 
         for(int i = 0; i < glassesButtons.Length; i++)
         {
@@ -25,53 +26,76 @@ public class GlassesUIManager : MonoBehaviour
         }
     }
 
-    void OnARFacesChanged(ARFacesChangedEventArgs args) {
+    void OnTrackablesChanged(ARTrackablesChangedEventArgs<ARFace> args) {
         if(args.added.Count > 0)
         { 
-            ARFace face = args.added[0];
-            Debug.Log($"Found face ${face.name}");
-            glasses.Clear();
-            for (int i = 0; i < face.transform.childCount; i++)
+            foreach (ARFace face in args.added)
             {
-                var child = face.transform.GetChild(i);
-                Debug.Log($"Child {child.name}");
-                if (!child.name.Contains("Glasses"))
+                Debug.Log($"Found face ${face.name}");
+                List<MeshRenderer> glasses = new List<MeshRenderer>();
+                // Create cached mesh renderers for each glasses object in the face for controlling grasses and material color later.
+                for (int i = 0; i < face.transform.childCount; i++)
                 {
-                    continue;
+                    var child = face.transform.GetChild(i);
+                    
+                    if (!child.name.Contains("Glasses"))
+                    {
+                        continue;
+                    }
+                    if (child.gameObject.activeSelf)
+                    {
+                        activeGlassesIndex = i;
+                    }
+                    var component = child.GetComponent<MeshRenderer>();
+                    glasses.Add(component);
                 }
-                if (child.gameObject.activeSelf)
-                {
-                    activeGlassesIndex = i;
-                }
-                var component = child.GetComponent<MeshRenderer>();
-                Debug.Log($"Found component {component}");
-                glasses.Add(child.GetComponent<MeshRenderer>());
+                activeGlassesDict.Add(face.name, glasses);
             }
         } else if(args.removed.Count > 0)
         {
-            glasses.ForEach((MeshRenderer glasses) => { GameObject.Destroy(glasses.gameObject); });
-            glasses.Clear();
+            // Destroy all glasses game objects which activeGlassesDict key is matching with removed face name
+            foreach (var kvp in args.removed)
+            {
+                ARFace face = kvp.Value;
+                Debug.Log($"Removed face ${face.name}");
+                foreach (var glasses in activeGlassesDict[face.name])
+                {
+                    Destroy(glasses.gameObject);
+                }
+                activeGlassesDict.Remove(face.name);
+            }
         }
-        
     }
 
     void OnGlassesButtonClick(int newActiveIndex)
     {
-        Debug.Log($"Change Active Glasses : {newActiveIndex}");
-        Debug.Log($"Glasses Count {glasses.Count}");
-        glasses[activeGlassesIndex].gameObject.SetActive(false);
-        glasses[newActiveIndex].gameObject.SetActive(true);
+        // Activate new glasses and deactivate old glasses in activeGlassesDict
+        foreach (var glassesList in activeGlassesDict.Values)
+        {
+            glassesList[activeGlassesIndex].gameObject.SetActive(false);
+            glassesList[newActiveIndex].gameObject.SetActive(true);
+        }
         activeGlassesIndex = newActiveIndex;
     }
 
     void OnChangeColor(int colorIndex)
     { 
-        Debug.Log($"Active Index {activeGlassesIndex}");
-        Debug.Log($"Color Index {colorIndex}");
-        Debug.Log($"Glasses Count {glasses.Count}");
-        Debug.Log($"Current Color {glasses[activeGlassesIndex].material.color}");
         Color newColor = buttonColors[colorIndex].image.color;
-        Debug.Log($"New Color {newColor}");
-        glasses[activeGlassesIndex].material.color = newColor;
+        foreach (var glassesList in activeGlassesDict.Values)
+        {
+            glassesList[activeGlassesIndex].material.color = newColor;
+        }
+    }
+
+    void OnDestroy()
+    {
+        arFaceManager.trackablesChanged.RemoveListener(OnTrackablesChanged);
+        // Remove all listeners from all buttons
+        for(int i = 0; i < glassesButtons.Length; i++)
+        {
+            var button = glassesButtons[i];
+            button.onClick.RemoveAllListeners();
+            buttonColors[i].onClick.RemoveAllListeners();
+        }
     }
 }
