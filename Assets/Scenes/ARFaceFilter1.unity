@@ -245,7 +245,7 @@ MonoBehaviour:
   <trackablesChanged>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
-  m_FacePrefab: {fileID: 3720199748111276690, guid: bc8e54b1d62bd2f499826cdfa9d5d708, type: 3}
+  m_FacePrefab: {fileID: 5500055563226450998, guid: 615a47a9d2ffa4bbc95cb2936fc33787, type: 3}
   m_MaximumFaceCount: 5
 --- !u!1 &617524064
 GameObject:
