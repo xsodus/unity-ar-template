@@ -1101,11 +1101,9 @@
     <ProjectReference Include="Unity.XR.CoreUtils.csproj" />
     <ProjectReference Include="Unity.XR.OpenXR.Features.ConformanceAutomation.csproj" />
     <ProjectReference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.csproj" />
-    <ProjectReference Include="Unity.XR.MockHMD.csproj" />
     <ProjectReference Include="Unity.XR.ARFoundation.VisualScripting.Editor.csproj" />
     <ProjectReference Include="Unity.XR.ARFoundation.InternalUtils.Editor.csproj" />
     <ProjectReference Include="Unity.XR.Simulation.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.MockHMD.Editor.csproj" />
     <ProjectReference Include="Unity.Timeline.Editor.csproj" />
     <ProjectReference Include="Unity.Timeline.csproj" />
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj" />
