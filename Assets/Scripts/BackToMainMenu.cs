@@ -13,9 +13,17 @@ public class BackToMainMenu : MonoBehaviour
     {
         self = GetComponent<Button>();
         arSession = GameObject.Find("AR Session").GetComponent<ARSession>();
-        self.onClick.AddListener(() => {
-            arSession.Reset();
-            SceneManager.LoadScene("MainMenu");
-        });
+        self.onClick.AddListener(OnButtonClicked);
+    }
+
+    void OnButtonClicked()
+    {
+        arSession.Reset();
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    void OnDestroy()
+    {
+        self.onClick.RemoveListener(OnButtonClicked);
     }
 }
