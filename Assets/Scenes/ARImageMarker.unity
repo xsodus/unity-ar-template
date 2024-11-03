@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 704047220}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1755,7 +1755,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 1
-  m_AdditionalShaderChannelsFlag: 1
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -2918,7 +2918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FocusMode: -1
   m_LightEstimationMode: -1
-  m_AutoFocus: 1
+  m_AutoFocus: 0
   m_ImageStabilization: 0
   m_LightEstimation: 0
   m_FacingDirection: 1
@@ -3110,8 +3110,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SerializedLibrary: {fileID: 11400000, guid: 3958a8308a239494080810f7e36c9d29, type: 2}
-  m_MaxNumberOfMovingImages: 0
-  m_TrackedImagePrefab: {fileID: 5262358242281827243, guid: 44af740032094bf48bddbf3f4644216f, type: 3}
+  m_MaxNumberOfMovingImages: 1
+  m_TrackedImagePrefab: {fileID: 3786852482757790928, guid: aeeb8a83796024e7bb7b3cf0adf96156, type: 3}
 --- !u!114 &2081542040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3126,7 +3126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   referredImages:
   - imageName: BeachsideTown
-    mappedObject: {fileID: 5262358242281827243, guid: 44af740032094bf48bddbf3f4644216f, type: 3}
+    mappedObject: {fileID: 3786852482757790928, guid: aeeb8a83796024e7bb7b3cf0adf96156, type: 3}
   - imageName: Fusebox
     mappedObject: {fileID: 366428452883267241, guid: 1a07e1c59d1ee714a96f2b1c8f3e17a2, type: 3}
 --- !u!1660057539 &9223372036854775807

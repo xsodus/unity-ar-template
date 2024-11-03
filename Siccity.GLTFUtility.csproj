@@ -19,7 +19,7 @@
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Siccity.GLTFUtility</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -32,7 +32,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -41,7 +41,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoStandardLibraries>true</NoStandardLibraries>
@@ -65,42 +65,47 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.25f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/MainMenuManager.cs" />
-    <Compile Include="Assets/Scripts/ARCreativeInputManager.cs" />
-    <Compile Include="Assets/Scripts/BackToMainMenu.cs" />
-    <Compile Include="Assets/_ARPortal/Source Files/Scripts/LightFlicker.cs" />
-    <Compile Include="Assets/Scripts/ARFaceUIManager.cs" />
-    <Compile Include="Assets/Scripts/MultipleTrackedImagesManager.cs" />
-    <Compile Include="Assets/_ARPortal/Source Files/Scripts/DisplayFPS.cs" />
-    <Compile Include="Assets/Settings/Project Configuration/SceneTemplate_RotateCube.cs" />
-    <Compile Include="Assets/Scripts/GlassesUIManager.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFScene.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Extensions/KHR_texture_transform.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Converters/EnumConverter.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Converters/ColorConverter.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Converters/Matrix4x4Converter.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Enums.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Extensions.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Converters/QuaternionConverter.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Converters/TranslationConverter.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFObject.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Settings/ShaderSettings.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFProperty.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFSkin.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFAnimation.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Settings/ImportSettings.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFExtras.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Importer.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFAccessor.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Plugins/draco/GLTFUtilityDracoLoader.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFMaterial.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFAsset.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Settings/AnimationSettings.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFBufferView.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Converters/Vector3Converter.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFNode.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFMesh.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFTexture.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Converters/Vector2Converter.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFPrimitive.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Exporter.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFBuffer.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFImage.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/Spec/GLTFCamera.cs" />
+    <Compile Include="Library/PackageCache/com.siccity.gltfutility/Scripts/BufferedBinaryReader.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
-    <None Include="Assets/_ARPortal/Source Files/Shaders/Toon/CustomLighting.hlsl" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
-    <None Include="Assets/_ARPortal/Source Files/Shaders/PortalWindowShader.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
-    <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
+    <None Include="Library/PackageCache/com.siccity.gltfutility/Materials/Built-in/Standard-Metallic-Blend.shader" />
+    <None Include="Library/PackageCache/com.siccity.gltfutility/Materials/Built-in/Standard-Specular.shader" />
+    <None Include="Library/PackageCache/com.siccity.gltfutility/Materials/Built-in/Standard-Metallic.shader" />
+    <None Include="Library/PackageCache/com.siccity.gltfutility/Materials/Built-in/Standard-Specular-Blend.shader" />
+    <None Include="Library/PackageCache/com.siccity.gltfutility/GLTFUtility.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -555,6 +560,30 @@
       <HintPath>/Applications/Unity/Hub/Editor/6000.0.25f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.XRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>/Applications/Unity/Hub/Editor/6000.0.25f1/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/6000.0.25f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/6000.0.25f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/6000.0.25f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/6000.0.25f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit/net40/unity-custom/nunit.framework.dll</HintPath>
       <Private>False</Private>
@@ -563,8 +592,32 @@
       <HintPath>Library/PackageCache/com.unity.testtools.codecoverage/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library/PackageCache/com.unity.visualscripting/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
@@ -1097,74 +1150,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Editor.csproj" />
-    <ProjectReference Include="Unity.InputSystem.ForUI.csproj" />
     <ProjectReference Include="UnityEditor.UI.csproj" />
-    <ProjectReference Include="Unity.XR.MetaOpenXR.Editor.csproj" />
-    <ProjectReference Include="Unity.Rider.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.CoreUtils.csproj" />
-    <ProjectReference Include="Unity.XR.OpenXR.Features.ConformanceAutomation.csproj" />
-    <ProjectReference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.csproj" />
-    <ProjectReference Include="Unity.XR.ARFoundation.VisualScripting.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.ARFoundation.InternalUtils.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.Simulation.Editor.csproj" />
-    <ProjectReference Include="Unity.Timeline.Editor.csproj" />
-    <ProjectReference Include="Unity.Timeline.csproj" />
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj" />
     <ProjectReference Include="UnityEngine.UI.csproj" />
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj" />
-    <ProjectReference Include="Unity.Multiplayer.Center.Editor.csproj" />
-    <ProjectReference Include="Unity.Mathematics.Editor.csproj" />
-    <ProjectReference Include="Unity.Performance.Profile-Analyzer.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.ARFoundation.csproj" />
-    <ProjectReference Include="UnityEditor.XR.LegacyInputHelpers.csproj" />
-    <ProjectReference Include="Unity.XR.Oculus.csproj" />
-    <ProjectReference Include="Unity.XR.ARFoundation.InternalUtils.csproj" />
-    <ProjectReference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.ARSubsystems.csproj" />
-    <ProjectReference Include="Unity.XR.ARCore.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.ARKit.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.Management.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.ARFoundation.VisualScripting.csproj" />
-    <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.Core.csproj" />
-    <ProjectReference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.csproj" />
-    <ProjectReference Include="Siccity.GLTFUtility.csproj" />
-    <ProjectReference Include="Unity.XR.ARKit.FaceTracking.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj" />
-    <ProjectReference Include="UnityEngine.SpatialTracking.csproj" />
-    <ProjectReference Include="Unity.Multiplayer.Center.Common.csproj" />
-    <ProjectReference Include="Unity.XR.ARKit.csproj" />
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.Management.csproj" />
-    <ProjectReference Include="Unity.TextMeshPro.csproj" />
-    <ProjectReference Include="Unity.XR.ARSubsystems.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.ARAnalytics.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.Interaction.Toolkit.csproj" />
-    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj" />
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.OpenXR.Editor.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj" />
-    <ProjectReference Include="Unity.Mathematics.csproj" />
-    <ProjectReference Include="Unity.XR.MetaOpenXR.csproj" />
-    <ProjectReference Include="Unity.XR.ARCore.csproj" />
-    <ProjectReference Include="Unity.XR.OpenXR.Features.MetaQuestSupport.csproj" />
-    <ProjectReference Include="Unity.XR.Oculus.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.ARFoundation.Editor.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.State.csproj" />
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.OpenXR.Features.MetaQuestSupport.Editor.csproj" />
-    <ProjectReference Include="Unity.XR.Simulation.csproj" />
-    <ProjectReference Include="Unity.XR.OpenXR.csproj" />
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj" />
-    <ProjectReference Include="Siccity.GLTFUtility.Editor.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.Flow.csproj" />
-    <ProjectReference Include="Unity.XR.CoreUtils.Editor.csproj" />
-    <ProjectReference Include="UnityEditor.SpatialTracking.csproj" />
-    <ProjectReference Include="Unity.InputSystem.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
