@@ -1128,8 +1128,8 @@
     <ProjectReference Include="Unity.XR.ARFoundation.VisualScripting.csproj" />
     <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj" />
     <ProjectReference Include="Unity.VisualScripting.Core.csproj" />
-    <ProjectReference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.csproj" />
     <ProjectReference Include="Siccity.GLTFUtility.csproj" />
+    <ProjectReference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.csproj" />
     <ProjectReference Include="Unity.XR.ARKit.FaceTracking.csproj" />
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj" />
     <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj" />

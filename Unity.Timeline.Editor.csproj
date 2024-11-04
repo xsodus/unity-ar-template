@@ -104,8 +104,8 @@
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/Tooltip.cs" />
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/Manipulators/Sequence/TrimClip.cs" />
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/Window/TimelineWindow_TrackGui.cs" />
-    <Compile Include="Library/PackageCache/com.unity.timeline/Editor/Actions/TrackActions.cs" />
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/Actions/IMenuChecked.cs" />
+    <Compile Include="Library/PackageCache/com.unity.timeline/Editor/Actions/TrackActions.cs" />
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/inspectors/TimelineAssetInspector.cs" />
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/Actions/Menus/TimelineContextMenu.cs" />
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/Manipulators/AddDelete/AddDeleteItemModeMix.cs" />
@@ -184,8 +184,8 @@
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/Utilities/Scopes/PropertyScope.cs" />
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/inspectors/TimelineInspectorUtility.cs" />
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/Manipulators/TimelineClipGroup.cs" />
-    <Compile Include="Library/PackageCache/com.unity.timeline/Editor/treeview/TimelineDragging.cs" />
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/inspectors/AnimationPlayableAssetInspector.cs" />
+    <Compile Include="Library/PackageCache/com.unity.timeline/Editor/treeview/TimelineDragging.cs" />
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/treeview/Snapping/SnapEngine.cs" />
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/CustomEditors/CustomTimelineEditorCache.cs" />
     <Compile Include="Library/PackageCache/com.unity.timeline/Editor/Manipulators/TimeAreaAutoPanner.cs" />
@@ -874,6 +874,10 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library/PackageCache/com.unity.visualscripting/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json/Runtime/Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">

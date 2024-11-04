@@ -145,9 +145,9 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Flow/Units/UnitEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Flow/Connections/IUnitConnectionWidget.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Flow/Framework/Codebase/SetMemberOption.cs" />
-    <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Flow/Framework/Codebase/CreateStructOption.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Flow/Framework/Nesting/SuperUnitEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Flow/Events/EventUnitWidget.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Flow/Framework/Codebase/CreateStructOption.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Flow/FlowGraphEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Flow/Plugin/Changelogs/Changelog_1_4_7.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Flow/Framework/Codebase/MemberUnitDescriptor.cs" />
@@ -765,6 +765,10 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library/PackageCache/com.unity.visualscripting/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json/Runtime/Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">

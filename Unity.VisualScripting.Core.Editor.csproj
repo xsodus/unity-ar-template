@@ -67,9 +67,9 @@
   <ItemGroup>
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Description/IGraphDescription.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Utilities/WarningLevel.cs" />
-    <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Canvases/ICanvas.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Plugin/Acknowledgements/Acknowledgement_DotNetZip.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Plugin/Changelogs/LegacyLudiqCore/Changelog_1_2_1.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Canvases/ICanvas.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Plugin/Changelogs/LegacyLudiqGraphs/Changelog_1_4_0.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Widgets/Groups/GraphGroupWidget.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Analytics/OnPreprocessBuildAnalyticsEventHandler.cs" />
@@ -281,8 +281,8 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/BoltStyles.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Utilities/BackupUtility.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Interface/Fuzzy/FuzzyOptionTreeExtensionProvider.cs" />
-    <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Dependencies/ReorderableList/ElementAdderMenu/IElementAdderMenuCommand.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Widgets/Nodes/INodeWidget.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Dependencies/ReorderableList/ElementAdderMenu/IElementAdderMenuCommand.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Variables/VariablesPanel.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Interface/Fuzzy/FuzzyOptionNode.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Widgets/StickyNote/StickyNoteWidget.cs" />
@@ -322,8 +322,8 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Plugins/Plugin.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Plugin/BoltCoreMigration.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Analysis/IAnalyser.cs" />
-    <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Windows/Wizard.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Plugin/BoltCoreConfiguration.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Windows/Wizard.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Reflection/LooseAssemblyNameOptionTree.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Plugin/Changelogs/LegacyLudiqCore/Changelog_1_4_13.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting/Editor/VisualScripting.Core/Reflection/TypeOption.cs" />
@@ -1073,6 +1073,10 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library/PackageCache/com.unity.visualscripting/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json/Runtime/Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
