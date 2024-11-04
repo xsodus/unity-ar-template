@@ -8,7 +8,7 @@ using System.Linq;
 
 enum GameState
 {
-    SelectField,
+    ScanField,
     SelectMarker,
     DragMarker,
 }
@@ -28,7 +28,7 @@ public class ARCreativeInputManager : MonoBehaviour
     public int selectedMarkerIndex = -1;
 
     [SerializeField]
-    private GameState currentState = GameState.SelectField;
+    private GameState currentState = GameState.ScanField;
 
     [SerializeField]
     private List<GameObject> markerPool = new List<GameObject>();
@@ -77,7 +77,7 @@ public class ARCreativeInputManager : MonoBehaviour
     {
         // Allow the user to select a marker only when a new plane is starting to create
         if(arg.added.Count > 0){
-            if(currentState == GameState.SelectField){  
+            if(currentState == GameState.ScanField){  
                 tutorialUIObjects[(int)currentState].SetActive(false);
                 currentState = GameState.SelectMarker;
                 tutorialUIObjects[(int)currentState].SetActive(true);
