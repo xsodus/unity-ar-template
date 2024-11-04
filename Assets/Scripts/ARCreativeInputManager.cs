@@ -36,6 +36,9 @@ public class ARCreativeInputManager : MonoBehaviour
     [SerializeField]
     private GameObject currentActiveMarker;
 
+    [SerializeField]
+    private GameObject[] tutorialUIObjects;
+
     public Vector3 decoratorOffset = new Vector3(0, 0.05f, 0);
 
     // Start is called before the first frame update
@@ -57,7 +60,10 @@ public class ARCreativeInputManager : MonoBehaviour
                 {
                     selectedMarkerIndex = index;
                     currentActiveMarker = markerPool[selectedMarkerIndex];
-                    currentState = GameState.DragMarker;
+                    if(currentState == GameState.SelectMarker){
+                        tutorialUIObjects[(int)currentState].SetActive(false);
+                        currentState = GameState.DragMarker;
+                    }
                 }
             });
         }
@@ -74,8 +80,12 @@ public class ARCreativeInputManager : MonoBehaviour
     {
         // Allow the user to select a marker only when a new plane is starting to create
         if(arg.added.Count > 0){
-            currentState = GameState.SelectMarker;
-            decorateButtons[0].transform.parent.gameObject.SetActive(true);
+            if(currentState == GameState.SelectField){  
+                tutorialUIObjects[(int)currentState].SetActive(false);
+                currentState = GameState.SelectMarker;
+                tutorialUIObjects[(int)currentState].SetActive(true);
+                decorateButtons[0].transform.parent.gameObject.SetActive(true);
+            }
         }
     }
 

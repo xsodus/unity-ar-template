@@ -65,6 +65,7 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.25f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/MobileARTemplateAssets/UI/Scripts/CutoutMaskUI.cs" />
     <Compile Include="Assets/Scripts/MainMenuManager.cs" />
     <Compile Include="Assets/Scripts/ARCreativeInputManager.cs" />
     <Compile Include="Assets/Scripts/BackToMainMenu.cs" />
