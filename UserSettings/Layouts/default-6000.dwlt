@@ -778,7 +778,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -26.001434, y: 23.029175, z: 14.923317}
+    m_Target: {x: 768, y: 1105.075, z: 0}
     speed: 2
     m_Value: {x: -26.001434, y: 23.029175, z: 14.923317}
   m_RenderMode: 0
@@ -830,7 +830,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.16100603, y: 0.15679269, z: -0.025916385, w: -0.9740746}
   m_Size:
-    m_Target: 28.382765
+    m_Target: 460.44617
     speed: 2
     m_Value: 28.382765
   m_Ortho:
@@ -1050,7 +1050,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 411.00037}
     m_SelectedIDs: 78a60000
     m_LastClickedID: 42616
-    m_ExpandedIDs: 00000000d4a50000d6a50000d8a50000daa50000dca50000dea50000e0a50000e2a50000e4a50000e6a50000e8a50000eaa50000eca50000eea50000f0a50000f2a50000f4a50000f6a50000f8a50000faa50000
+    m_ExpandedIDs: 00000000fc9f0000fe9f000000a0000002a0000004a0000006a0000008a000000aa000000ca000000ea0000010a0000012a0000014a0000016a0000018a000001aa000001ca000001ea0000020a0000022a0000024a0000026a0000028a000002aa000002ca00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1079,7 +1079,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d4a50000d6a50000d8a50000daa50000dca50000dea50000e0a50000e2a50000e4a50000e6a50000e8a50000eaa50000eca50000eea50000f0a50000f2a50000f4a50000f6a50000f8a50000faa50000
+    m_ExpandedIDs: 00000000fc9f0000fe9f000000a0000002a0000004a0000006a0000008a000000aa000000ca000000ea0000010a0000012a0000014a0000016a0000018a000001aa000001ca000001ea0000020a0000022a0000024a0000026a0000028a000002aa000002ca00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1660,7 +1660,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0, y: 0.8094221, z: 0.17450988}
+    m_Target: {x: 406, y: 150, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0.8094221, z: 0.17450988}
   m_RenderMode: 0
@@ -1708,11 +1708,11 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
     m_Value: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_Size:
-    m_Target: 4.5503225
+    m_Target: 416.29315
     speed: 2
     m_Value: 4.5503225
   m_Ortho:

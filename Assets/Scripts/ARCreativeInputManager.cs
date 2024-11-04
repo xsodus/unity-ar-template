@@ -23,7 +23,7 @@ public class ARCreativeInputManager : MonoBehaviour
 
     public GameObject[] markerPrefab;
 
-    public Toggle[] decorateButtons;
+    public Button[] decorateButtons;
 
     public int selectedMarkerIndex = -1;
 
@@ -55,15 +55,12 @@ public class ARCreativeInputManager : MonoBehaviour
         for (int i = 0; i < decorateButtons.Length; i++)
         {
             int index = i; // Capture the current index to avoid closure issues
-            decorateButtons[i].onValueChanged.AddListener((value) => {
-                if (value)
-                {
-                    selectedMarkerIndex = index;
-                    currentActiveMarker = markerPool[selectedMarkerIndex];
-                    if(currentState == GameState.SelectMarker){
-                        tutorialUIObjects[(int)currentState].SetActive(false);
-                        currentState = GameState.DragMarker;
-                    }
+            decorateButtons[i].onClick.AddListener(() => {
+                selectedMarkerIndex = index;
+                currentActiveMarker = markerPool[selectedMarkerIndex];
+                if(currentState == GameState.SelectMarker){
+                    tutorialUIObjects[(int)currentState].SetActive(false);
+                    currentState = GameState.DragMarker;
                 }
             });
         }
