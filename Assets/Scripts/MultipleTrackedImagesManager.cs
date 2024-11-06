@@ -2,21 +2,30 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 [Serializable]
-public class ReferredImage {
-    public string imageName;
+public struct ReferredImage {
+    public string referenceImageName;
     public GameObject mappedObject;
+}
+
+public struct TrackedImageMapping {
+    public string referenceImageName;
+    public GameObject mappedPrefab;
+    public GameObject mappedInstance;
 }
 
 public class MultipleTrackedImagesManager : MonoBehaviour
 {
+    [SerializeField]
+    private ARSession aRSession;
     private ARTrackedImageManager trackedImageManager;
 
     [SerializeField]
     private ReferredImage[] referredImages;
 
-    private Dictionary<string, GameObject> referredImagesDict = new Dictionary<string, GameObject>();
+    private Dictionary<string, TrackedImageMapping> referredImagesDict = new Dictionary<string, TrackedImageMapping>();
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +37,14 @@ public class MultipleTrackedImagesManager : MonoBehaviour
         // Create a dictionary for faster lookup
         foreach (var referredImage in referredImages)
         {
-            referredImagesDict[referredImage.imageName] = referredImage.mappedObject;
+            var gameObject = Instantiate(referredImage.mappedObject, Vector3.zero, Quaternion.identity);
+            gameObject.SetActive(false);
+            referredImagesDict[referredImage.referenceImageName] = new TrackedImageMapping
+            {
+                referenceImageName = referredImage.referenceImageName,
+                mappedPrefab = referredImage.mappedObject,
+                mappedInstance = gameObject
+            };
         }
     }
 
@@ -38,14 +54,18 @@ public class MultipleTrackedImagesManager : MonoBehaviour
         {
             foreach (ARTrackedImage addedImage in args.added)
             {
-                Debug.Log($"Detected! {addedImage.name}");
-                Debug.Log($"Detected! {addedImage.gameObject.name}");
-                Debug.Log($"ImageName {addedImage.referenceImage.name}");
-
-                if (addedImage.referenceImage != null && referredImagesDict.TryGetValue(addedImage.referenceImage.name, out GameObject targetObject))
+                Debug.Log($"Detected! {addedImage.name}, {addedImage.gameObject.name}, ImageName: {addedImage.referenceImage.name}, TrackingState: {addedImage.trackingState}");
+                
+                if(addedImage.trackingState != TrackingState.Tracking)
                 {
-                    Debug.Log($"Create object! {targetObject.name}");
-                    Instantiate(targetObject, addedImage.transform);
+                    continue;
+                }
+                if (addedImage.referenceImage != null && referredImagesDict.TryGetValue(addedImage.referenceImage.name, out TrackedImageMapping targetObject))
+                {
+                    var targetObjectInstance = targetObject.mappedInstance;
+                    targetObjectInstance.transform.parent = addedImage.transform;
+                    targetObjectInstance.transform.localPosition = Vector3.zero;
+                    targetObjectInstance.SetActive(true);
                 }
             }
 
@@ -53,7 +73,12 @@ public class MultipleTrackedImagesManager : MonoBehaviour
         {
             foreach (var removedObject in args.removed)
             {
-                Destroy(removedObject.Value.gameObject);
+                if (removedObject.Value.referenceImage != null && referredImagesDict.TryGetValue(removedObject.Value.referenceImage.name, out TrackedImageMapping targetObject))
+                {
+                    var targetObjectInstance = targetObject.mappedInstance;
+                    targetObjectInstance.SetActive(false);
+                    targetObjectInstance.transform.parent = null;
+                }
             }
         }
     }
