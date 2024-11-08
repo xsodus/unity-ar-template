@@ -245,7 +245,7 @@ MonoBehaviour:
   <trackablesChanged>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
-  m_FacePrefab: {fileID: 5500055563226450998, guid: 615a47a9d2ffa4bbc95cb2936fc33787, type: 3}
+  m_FacePrefab: {fileID: 6907616334429394592, guid: f2a51c88666e14c7f94353f40be3e58a, type: 3}
   m_MaximumFaceCount: 5
 --- !u!1 &617524064
 GameObject:
@@ -642,6 +642,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 237995524}
     - target: {fileID: 738066580752162943, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
+      propertyPath: leftSidebar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 738066580752162943, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
+      propertyPath: rotateButton
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 738066580752162943, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
       propertyPath: arCameraManager
       value: 
       objectReference: {fileID: 617524068}
@@ -753,6 +761,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6276137065157803531, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
+      propertyPath: m_text
+      value: AR - Face Tracking
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276137065157803531, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 6551314784073768546, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
       propertyPath: m_Name
       value: ARFaceDebugMenu
@@ -845,6 +861,26 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 6551314784073768553, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
+      propertyPath: m_Toolbar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551314784073768553, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
+      propertyPath: m_DisplayInfoMenuButton
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551314784073768553, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
+      propertyPath: m_DisplayDebugOptionsMenuButton
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551314784073768553, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
+      propertyPath: m_DisplayConfigurationsMenuButton
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551314784073768553, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
+      propertyPath: m_DisplayCameraConfigurationsMenuButton
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7115160248999973325, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -870,7 +906,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2419861413912198909, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
+    - {fileID: 7300570761566159079, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 776670006d4d14d94aee4d7fba2419c8, type: 3}
