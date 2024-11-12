@@ -1,6 +1,16 @@
 # AR Template Project for Unity 6.0
 
-This project was created to address the deprecation of the AR Origin component in Unity 6.0. It aims to streamline the initial setup process for AR projects by providing a pre-configured foundation.
+This project was created to address the deprecation of the AR Origin component and functions in Unity 6.0. It aims to streamline the initial setup process for AR projects by providing a pre-configured foundation.
+
+## Dependencies
+
+This project relies on the following dependencies:
+
+- **Unity AR Foundation**: Provides a framework for building AR applications.
+- **ARKit XR Plugin**: Required for AR functionality on iOS devices.
+- **ARCore XR Plugin**: Required for AR functionality on Android devices.
+- **XR Plug-in Management**: Manages the loading of XR plugins and provides a unified interface for configuring and managing XR settings across different platforms.
+- **XR Simulation Environments**: Allows testing and development of AR applications within a simulated environment, reducing the need for physical devices during the initial stages of development.
 
 ## Instructions for iOS Platform
 
@@ -48,9 +58,9 @@ Expected Result: A green mask should appear on your face, signifying successful 
 
 ## Development Status
 
-- [x] iOS setup
-- [x] Android setup
+- [x] iOS Setup
+- [x] Android Setup
 - [ ] Occulus Quest (WIP)
-- [x] AR face filter test scene
-- [x] AR tracked image test scene
-- [x] AR plan marker test scene
+- [x] AR Face Tracking Test Scene
+- [x] AR Image Tracking Test Scene
+- [x] AR Plan Detection Test Scene
