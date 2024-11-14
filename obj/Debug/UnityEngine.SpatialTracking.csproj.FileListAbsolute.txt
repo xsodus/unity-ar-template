@@ -1,9 +1,0 @@
-/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEngine.SpatialTracking.dll
-/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEngine.SpatialTracking.pdb
-/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEditor.UI.pdb
-/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEngine.UI.pdb
-/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/UnityEngine.SpatialTracking.csproj.AssemblyReference.cache
-/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/UnityEngine.SpatialTracking.csproj.CoreCompileInputs.cache
-/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/UnityEngine.SpatialTracking.csproj.CopyComplete
-/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/UnityEngine.SpatialTracking.dll
-/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/UnityEngine.SpatialTracking.pdb

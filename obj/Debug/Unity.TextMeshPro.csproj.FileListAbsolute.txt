@@ -1,8 +1,0 @@
-/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.TextMeshPro.dll
-/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.TextMeshPro.pdb
-/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEditor.UI.pdb
-/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEngine.UI.pdb
-/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.TextMeshPro.csproj.CoreCompileInputs.cache
-/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.TextMeshPro.csproj.CopyComplete
-/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.TextMeshPro.dll
-/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.TextMeshPro.pdb
