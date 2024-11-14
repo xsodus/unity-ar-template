@@ -1,0 +1,6 @@
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEngine.TestRunner.dll
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEngine.TestRunner.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/UnityEngine.TestRunner.csproj.AssemblyReference.cache
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/UnityEngine.TestRunner.csproj.CoreCompileInputs.cache
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/UnityEngine.TestRunner.dll
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/UnityEngine.TestRunner.pdb

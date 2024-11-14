@@ -1,0 +1,11 @@
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.XR.CoreUtils.dll
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.XR.CoreUtils.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.InputSystem.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEngine.SpatialTracking.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEditor.UI.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEngine.UI.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.XR.CoreUtils.csproj.AssemblyReference.cache
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.XR.CoreUtils.csproj.CoreCompileInputs.cache
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.XR.CoreUtils.csproj.CopyComplete
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.XR.CoreUtils.dll
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.XR.CoreUtils.pdb

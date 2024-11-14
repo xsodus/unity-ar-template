@@ -1,0 +1,16 @@
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.XR.OpenXR.Features.ConformanceAutomation.dll
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.XR.OpenXR.Features.ConformanceAutomation.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.XR.Management.dll
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.XR.Management.Editor.dll
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.InputSystem.dll
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.XR.OpenXR.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEditor.UI.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEngine.UI.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.XR.Management.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.XR.Management.Editor.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.InputSystem.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.XR.OpenXR.Features.ConformanceAutomation.csproj.AssemblyReference.cache
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.XR.OpenXR.Features.ConformanceAutomation.csproj.CoreCompileInputs.cache
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.XR.OpenXR.Features.ConformanceAutomation.csproj.CopyComplete
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.XR.OpenXR.Features.ConformanceAutomation.dll
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.XR.OpenXR.Features.ConformanceAutomation.pdb

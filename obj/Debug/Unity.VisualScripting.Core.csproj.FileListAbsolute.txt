@@ -1,0 +1,10 @@
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.VisualScripting.Core.dll
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.VisualScripting.Core.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/Unity.InputSystem.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEditor.UI.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/Temp/bin/Debug/UnityEngine.UI.pdb
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.VisualScripting.Core.csproj.AssemblyReference.cache
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.VisualScripting.Core.csproj.CoreCompileInputs.cache
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.VisualScripting.Core.csproj.CopyComplete
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.VisualScripting.Core.dll
+/Users/akkaponsomjai/personal-projects/unity-ar-template/obj/Debug/Unity.VisualScripting.Core.pdb
